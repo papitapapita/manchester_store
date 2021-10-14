@@ -1,2 +1,2 @@
-# manchester_store
+# Manchester Store Practice
 With this project I am practicing my skills and for that I am using the merch of Manchester United as an inspiration
