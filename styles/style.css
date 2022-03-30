@@ -1,9 +1,26 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 .header {
   background-color: #da0106;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  min-height: 12vh;
+}
+
+.header__manchester-logo-div {
+  width: 100%;
+  padding-left: 1.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 16vh;
+}
+
+.image-container--logo {
+  margin-right: 1.2rem;
 }
 
 .header__titles {
@@ -21,7 +38,6 @@
 
 .header__title,
 .header__subtitle {
-  font-family: "Nunito", sans-serif;
   text-transform: uppercase;
   margin: 0;
 }
@@ -34,26 +50,17 @@
   font-weight: 300;
 }
 
-.header__manchester-logo-div {
-  padding-left: 1.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header__manchester-logo-div,
-.menu {
-  width: 40%;
-}
-
 .header__partner-div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
 }
 
 .header__img--manchester {
@@ -76,8 +83,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 10rem;
-  padding-left: 0;
+  padding-right: 3.2rem;
 }
 
 .menu__item {
