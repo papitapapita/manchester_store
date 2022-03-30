@@ -1,4 +1,5 @@
 $dark-red: #7b0101;
+$black: #050505;
 $red: #b80102;
 $light-red: #da0106;
 $yellow: #ffe600;
@@ -6,14 +7,17 @@ $light-orange: #ef9101;
 $orange: #e14f01;
 
 body {
+  min-height: 100vh;
   font-family: "Nunito", sans-serif;
+  display: grid;
+  grid-template-rows: 14vh 80vh 6vh;
 }
 
 .header {
   background-color: $light-red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 12vh;
+  height: 100%;
 }
 
 .header__manchester-logo-div {
@@ -23,6 +27,8 @@ body {
 }
 
 .image-container--logo {
+  display: flex;
+  align-items: center;
   margin-right: 1.2rem;
 }
 
@@ -72,4 +78,23 @@ body {
 
 .menu__item {
   margin-left: 3rem;
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.main__aside {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $black;
+}
+
+.section-card {
+  width: 100%;
+  border-radius: 1.2rem;
+  background-color: white;
+  margin: 2rem;
 }

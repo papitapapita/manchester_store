@@ -1,5 +1,10 @@
 body {
+  min-height: 100vh;
   font-family: "Nunito", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 14vh 80vh 6vh;
+      grid-template-rows: 14vh 80vh 6vh;
 }
 
 .header {
@@ -8,7 +13,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  min-height: 12vh;
+  height: 100%;
 }
 
 .header__manchester-logo-div {
@@ -20,6 +25,12 @@ body {
 }
 
 .image-container--logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 1.2rem;
 }
 
@@ -88,5 +99,29 @@ body {
 
 .menu__item {
   margin-left: 3rem;
+}
+
+.main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+.main__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #050505;
+}
+
+.section-card {
+  width: 100%;
+  border-radius: 1.2rem;
+  background-color: white;
+  margin: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
