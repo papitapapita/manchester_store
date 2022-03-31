@@ -124,3 +124,48 @@ body {
   font-size: 1.6rem;
   font-weight: 900;
 }
+
+.shop{
+  padding: 4rem 2rem 0 ;
+  overflow: auto;
+  scroll-padding-right: 2rem;
+}
+
+.shop__title{
+  padding-left: 2.5rem;
+
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: $black;
+}
+
+.shop__items-container{
+  width:fit-content;
+  display: flex;
+  align-items: center;
+  height: 95%;
+}
+
+.shop-item{
+  border-radius: 1.2rem ;
+  padding: 2rem;
+  box-shadow: 4px 10px 24px -2px rgba(5,5,5,0.27);
+  margin: 0 2.5rem;
+}
+
+.shop-item__img{
+  width: 32rem;
+}
+
+.shop-item__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.shop-item__info *{
+  font-size: 2.4rem;
+  color: $black;
+}
